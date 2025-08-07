@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 import os
 from dotenv import load_dotenv
@@ -59,7 +59,7 @@ MIDDLEWARE = [
 
 ]
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
+    "https://plutox-port.vercel.app/",
 ]
 CORS_ALLOW_CREDENTIALS = True
 
